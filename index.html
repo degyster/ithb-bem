@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <div class="information" id="information">
+            <div class="information-main">
+            
+                <img class="information-icons" src="ico.png" alt="">
+
+            <div class="information-texts">
+
+            <div class="information-text"><img src=""><h3>Publick layer</h3></div>
+            <div class="information-text"><img src=""><h3>private layer</h3></div>
+            <div class="information-text"><img src=""><h3>bacik auth guarg</h3></div>
+            <div class="information-text"><img src=""><h3>https</h3></div>
+            <div class="information-text"><img src=""><h3>jdbc</h3></div>
+
+                </div>
+            </div>
+        </div>
+        <button class="information-button" onclick="toggleinformation()">Обозначения</button>
+        <div class="panels">
+            <div class="panels-client">
+                <div class="panels-client__card"><h2>Client</h2></div>
+                <div class="panels-client__card"><h2>Client</h2></div>
+                <div class="panels-client__card"><h2>Client</h2></div>
+            </div>
+            <div class="panels-server">
+                <div class="panels-server__card">Zuul</div>
+                <div class="panels-server__card"> Euerka <br> discovery</div>
+            </div>
+            <div class="panels-servis">
+                <div class="panels-servis__card"> <p>accomondation</p> <h3>server</h3></div>
+                <div class="panels-servis__card"> <p>auth</p> <h3>server</h3></div>
+                <div class="panels-servis__card"> <p>reservation</p> <h3>server</h3></div>
+                <div class="panels-servis__card"><p>user </p> <h3>server</h3></div>
+            </div>
+        </div>
+    </div>
+    <script>
+    function toggleinformation() {
+    let information = document.getElementById("information");
+    if (information.style.display === "none") {
+        information.style.display = "block";
+    } else {
+        information.style.display = "none";
+    }
+    }
+
+    </script>
+</body>
+</html>
